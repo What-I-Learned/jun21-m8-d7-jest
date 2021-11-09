@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "heroku-postbuild": "npm run build",
     "watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watchAll",
     "dev": "nodemon -r dotenv/config ./src",
     "start": "node ./src"
